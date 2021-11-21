@@ -1,0 +1,129 @@
+/**********************************************************************/
+/*  PROYECTO MECANOGRAFIA        */
+/*  EQUIPO HOLANDA                 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --color-fondo: hsl(69, 42%, 94%);
+  --color-primario: hsl(239, 85%, 49%);
+  --color-primario-claro: hsl(226, 42%, 65%);
+  --color-primario-muy-claro: hsl(0, 0%, 80%);
+  --color-sobre-primario: hsl(2, 100%, 100%);
+  --color-secundario: hsl(2, 50%, 102%);
+  --color-sobre-secundario: hsl(2, 0%, 0%);
+  --color-boton-comenzar: rgb(49, 99, 209);
+  --color-sombra-boton-comenzar: hsl(217, 88%, 16%);
+
+  --fuente-primaria: sans-serif;
+  --fuente-secuendaria: serif;
+}
+
+/* ************************************ */
+
+.lienzo {
+  height: 100vh;
+  background-color: var(--color-fondo);
+}
+
+/* ************************************ */
+
+.cabecera {
+  padding: 0.5em 2em;
+
+  background-color: var(--color-primario);
+  color: var(--color-sobre-primario);
+  margin: 13% 14% 3% 14%;
+
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* ************************************ */
+
+.panel {
+  width: clamp(500px, 90%, 800px);
+  background-color: var(--color-primario-muy-claro);
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* ************************************ */
+
+.panel__controles {
+  width: 100%;
+  background-color: var(--color-primario-claro);
+  padding: 10px 0px 10px 0px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cambio {
+  background-color: var(--color-boton-comenzar);
+  /* Modifica el aspecto del cursor para indicar que es un botón */
+  cursor: pointer;
+  padding: 5px 8px 5px 8px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px var(--color-sombra-boton-comenzar);
+}
+
+/* ************************************ */
+.panel__marcador {
+  width: 100%;
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dato-numerico {
+  display: inline-block;
+  background-color: var(--color-primario);
+  color: var(--color-sobre-primario);
+  padding: 5px;
+}
+
+/* ************************************ */
+.panel__palabra-de-muestra {
+  width: 70%;
+  background-color: var(--color-primario);
+  color: var(--color-sobre-primario);
+  margin: 10px 400px 10px 100px;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+.palabra {
+  width: 33%;
+  background-color: var(--color-secundario);
+  color: var(--color-sobre-secundario);
+  margin: 10px auto;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* ************************************ */
+.panel__entrada {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+input {
+  padding: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid;
+}
